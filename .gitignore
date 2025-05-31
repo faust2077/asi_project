@@ -1,11 +1,81 @@
+<<<<<<< HEAD
+=======
+##########################
+# KEDRO PROJECT
+
+# ignore all local configuration
+conf/local/**
+!conf/local/.gitkeep
+
+# ignore potentially sensitive credentials files
+conf/**/*credentials*
+
+# ignore everything in the following folders
+data/**
+
+# except their sub-folders
+!data/**/
+
+# also keep all .gitkeep files
+!.gitkeep
+
+# also keep the example dataset
+!data/01_raw/companies.csv
+!data/01_raw/reviews.csv
+!data/01_raw/shuttles.xlsx
+
+# ignore kedro-viz metadata
+.viz
+
+# ignore file based logs
+*.log
+
+##########################
+# Common files
+
+# IntelliJ
+.idea/
+*.iml
+out/
+.idea_modules/
+
+### macOS
+*.DS_Store
+.AppleDouble
+.LSOverride
+.Trashes
+
+# Vim
+*~
+.*.swo
+.*.swp
+
+# emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# C extensions
+*.so
+
+### Python template
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 
+<<<<<<< HEAD
 # C extensions
 *.so
 
+=======
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 # Distribution / packaging
 .Python
 build/
@@ -20,7 +90,10 @@ parts/
 sdist/
 var/
 wheels/
+<<<<<<< HEAD
 share/python-wheels/
+=======
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 *.egg-info/
 .installed.cfg
 *.egg
@@ -39,17 +112,24 @@ pip-delete-this-directory.txt
 # Unit test / coverage reports
 htmlcov/
 .tox/
+<<<<<<< HEAD
 .nox/
+=======
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 .coverage
 .coverage.*
 .cache
 nosetests.xml
 coverage.xml
 *.cover
+<<<<<<< HEAD
 *.py,cover
 .hypothesis/
 .pytest_cache/
 cover/
+=======
+.hypothesis/
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 
 # Translations
 *.mo
@@ -57,9 +137,15 @@ cover/
 
 # Django stuff:
 *.log
+<<<<<<< HEAD
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+=======
+.static_storage/
+.media/
+local_settings.py
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 
 # Flask stuff:
 instance/
@@ -72,12 +158,16 @@ instance/
 docs/_build/
 
 # PyBuilder
+<<<<<<< HEAD
 .pybuilder/
+=======
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 target/
 
 # Jupyter Notebook
 .ipynb_checkpoints
 
+<<<<<<< HEAD
 # IPython
 profile_default/
 ipython_config.py
@@ -123,6 +213,13 @@ __pypackages__/
 # Celery stuff
 celerybeat-schedule
 celerybeat.pid
+=======
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 
 # SageMath parsed files
 *.sage.py
@@ -136,6 +233,7 @@ ENV/
 env.bak/
 venv.bak/
 
+<<<<<<< HEAD
 # Spyder project settings
 .spyderproject
 .spyproject
@@ -143,11 +241,14 @@ venv.bak/
 # Rope project settings
 .ropeproject
 
+=======
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
 # mkdocs documentation
 /site
 
 # mypy
 .mypy_cache/
+<<<<<<< HEAD
 .dmypy.json
 dmypy.json
 
@@ -192,3 +293,8 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+=======
+
+# mlflow local runs
+mlruns/*
+>>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
