@@ -1,104 +1,67 @@
-# asi_project
-<<<<<<< HEAD
-Simple calories prediction AutoML pipeline with Kedro and Azure Blob Storage.
-=======
+# Projekt aplikacji webowej do predykcji spalonych kalorii podczas wysiłku fizycznego
 
-[![Powered by Kedro](https://img.shields.io/badge/powered_by-kedro-ffc900?logo=kedro)](https://kedro.org)
+Aplikacja webowa zbudowana w Streamlit, umożliwiająca wprowadzanie danych dotyczących wysiłku fizycznego i wyświetlanie predykcji liczby spalonych kalorii na podstawie wytrenowanego modelu uczenia maszynowego.
 
-## Overview
+## Klonowanie repozytorium
 
-This is your new Kedro project with PySpark setup, which was generated using `kedro 0.19.13`.
+1. Sklonuj repozytorium:
 
-Take a look at the [Kedro documentation](https://docs.kedro.org) to get started.
+   ```bash
+   git clone https://github.com/faust2077/asi_project.git
+   cd asi_project
+   ```
 
-## Rules and guidelines
+## Uruchamianie aplikacji lokalnie
+   
+1. Utwórz i aktywuj środowisko wirtualne:
+   
+- Windows (PowerShell):
 
-In order to get the best out of the template:
+   ```bash
+   python -m venv .venv
+   Set-ExecutionPolicy Unrestricted -Scope Process
+   .venv\Scripts\activate
+   ```
 
-* Don't remove any lines from the `.gitignore` file we provide
-* Make sure your results can be reproduced by following a [data engineering convention](https://docs.kedro.org/en/stable/faq/faq.html#what-is-data-engineering-convention)
-* Don't commit data to your repository
-* Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
+- Linux/macOS:
 
-## How to install dependencies
+  ```bash
+  python3 -m venv .venv
+  source .venv/bin/activate
+  ```
 
-Declare any dependencies in `requirements.txt` for `pip` installation.
+2. Zainstaluj wymagane pakiety:
+   
+   ```bash
+   pip install -r app/requirements.txt
+   ```
+    
+3. Uruchom serwer aplikacji:
 
-To install them, run:
+   ```bash
+   streamlit run app/app.py
+   ```
+   
+4. Otwórz przeglądarkę i przejdź do:
 
-```
-pip install -r requirements.txt
-```
+   http://localhost:8501
 
-## How to run your Kedro pipeline
+## Uruchamianie aplikacji w kontenerze Docker
 
-You can run your Kedro project with:
+1. Zbuduj obraz Dockera:
 
-```
-kedro run
-```
+   ```bash
+   docker build -t caltracker:v1.0 .
+   ```
+    
+2. Uruchom aplikację w kontenerze:
 
-## How to test your Kedro project
+   ```bush
+   docker run -p 8501:8501 caltracker:v1.0
+   ```
+   
+3. Otwórz przeglądarkę i przejdź do:
 
-Have a look at the files `src/tests/test_run.py` and `src/tests/pipelines/data_science/test_pipeline.py` for instructions on how to write your tests. Run the tests as follows:
+   http://localhost:8501
 
-```
-pytest
-```
 
-To configure the coverage threshold, look at the `.coveragerc` file.
-
-## Project dependencies
-
-To see and update the dependency requirements for your project use `requirements.txt`. Install the project requirements with `pip install -r requirements.txt`.
-
-[Further information about project dependencies](https://docs.kedro.org/en/stable/kedro_project_setup/dependencies.html#project-specific-dependencies)
-
-## How to work with Kedro and notebooks
-
-> Note: Using `kedro jupyter` or `kedro ipython` to run your notebook provides these variables in scope: `catalog`, `context`, `pipelines` and `session`.
->
-> Jupyter, JupyterLab, and IPython are already included in the project requirements by default, so once you have run `pip install -r requirements.txt` you will not need to take any extra steps before you use them.
-
-### Jupyter
-To use Jupyter notebooks in your Kedro project, you need to install Jupyter:
-
-```
-pip install jupyter
-```
-
-After installing Jupyter, you can start a local notebook server:
-
-```
-kedro jupyter notebook
-```
-
-### JupyterLab
-To use JupyterLab, you need to install it:
-
-```
-pip install jupyterlab
-```
-
-You can also start JupyterLab:
-
-```
-kedro jupyter lab
-```
-
-### IPython
-And if you want to run an IPython session:
-
-```
-kedro ipython
-```
-
-### How to ignore notebook output cells in `git`
-To automatically strip out all output cell contents before committing to `git`, you can use tools like [`nbstripout`](https://github.com/kynan/nbstripout). For example, you can add a hook in `.git/config` with `nbstripout --install`. This will run `nbstripout` before anything is committed to `git`.
-
-> *Note:* Your output cells will be retained locally.
-
-## Package your Kedro project
-
-[Further information about building project documentation and packaging your project](https://docs.kedro.org/en/stable/tutorial/package_a_project.html)
->>>>>>> 89a1a37 (Set up Kedro project from Google Drive files)
