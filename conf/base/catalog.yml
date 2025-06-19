@@ -1,0 +1,55 @@
+# Raw data
+raw_calories:
+  type: pandas.CSVDataSet
+  filepath: data/raw_data/calories.csv
+
+# Intermediate datasets  
+calories_no_user_id:
+  type: MemoryDataSet
+
+calories_no_empty:
+  type: MemoryDataSet
+
+calories_no_duplicates:  
+  type: MemoryDataSet
+
+calories_with_bmi:
+  type: MemoryDataSet
+
+# Preprocessing outputs
+preprocessed_calories:
+  type: pandas.CSVDataSet
+  filepath: data/preprocessed_data/preprocessed_calories.csv
+  save_args:
+    index: False
+
+outliers_report:
+  type: pickle.PickleDataSet
+  filepath: data/reports/outliers_report.pkl
+
+# Model training outputs
+pycaret_experiment:
+  type: MemoryDataSet
+
+model_comparison:
+  type: pandas.CSVDataSet
+  filepath: data/models/model_comparison.csv
+  save_args:
+    index: False
+
+tuned_model:
+  type: MemoryDataSet
+
+model_metrics:
+  type: json.JSONDataSet
+  filepath: data/models/model_metrics.json
+
+final_model:
+  type: pickle.PickleDataSet
+  filepath: data/models/final_model.pkl
+
+predictions:
+  type: pandas.CSVDataSet
+  filepath: data/predictions/predictions.csv
+  save_args:
+    index: False
