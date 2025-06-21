@@ -1,9 +1,7 @@
-# Data_processing
 target_column: Calories
 # Compute mutual information scores against the correct target
-top_features: 5
+top_features: 4 # Weight column excluded
 
-# Model_training
 # Data split ratio for training vs. testing
 train_size: 0.8
 # Seed for experiment reproducibility
@@ -14,4 +12,3 @@ n_models: 5
 best_model_name: lightgbm
 # Path to save the final trained model
 model_save_path: data/06_models/final_model.pkl
-

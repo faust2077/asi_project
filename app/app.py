@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import streamlit as st
-from kedro_inference import run_inference
+from model.model import use_model
 
 st.set_page_config(page_title="CalTracker")
 
@@ -35,8 +35,11 @@ def main():
 
     if st.button("Calculate calories burned"):
         with st.spinner('Calculation in progress...'):
-            result = run_inference(edited_df)
-            st.write("Estimated calories burned: ", int(result.iloc[0]))
+            edited_df.to_csv(file_name, index=False)
+            time.sleep(3)
+            df = pd.read_csv(file_name)
+            cal = use_model(df)
+            st.write("Estimated calories burned: ", cal)
 
 if __name__ == "__main__":
     main()

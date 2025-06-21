@@ -42,15 +42,15 @@ model_metrics:
   type: json.JSONDataset
   filepath: data/06_models/model_metrics.json
 
-# Final model artifact
-final_model:
-  type: pickle.PickleDataset
-  filepath: data/06_models/final_model.pkl
-
-# Inference outputs
+# Output of predictions
 predictions:
   type: pandas.CSVDataset
   filepath: data/07_model_output/predictions.csv
   save_args:
     index: False
+
+# Final model artifact
+final_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/final_model.pkl
 
