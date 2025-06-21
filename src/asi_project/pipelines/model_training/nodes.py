@@ -12,7 +12,7 @@ def setup_pycaret_experiment(df: pd.DataFrame, target_column: str = 'Calories',
         target=target_column,
         train_size=train_size,
         session_id=session_id,
-        silent=True
+        verbose=False
     )
     return exp
 

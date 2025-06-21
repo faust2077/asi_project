@@ -3,14 +3,14 @@ raw_calories:
   type: pandas.CSVDataset
   filepath: data/01_raw/calories.csv
 
-# Intermediate datasets  
+# Intermediate (in-memory) datasets
 calories_no_user_id:
   type: MemoryDataset
 
 calories_no_empty:
   type: MemoryDataset
 
-calories_no_duplicates:  
+calories_no_duplicates:
   type: MemoryDataset
 
 calories_with_bmi:
@@ -19,7 +19,7 @@ calories_with_bmi:
 # Preprocessing outputs
 preprocessed_calories:
   type: pandas.CSVDataset
-  filepath: data/02_intermediate/preprocessed_calories.csv
+  filepath: data/05_model_input/preprocessed_calories.csv
   save_args:
     index: False
 
@@ -27,15 +27,13 @@ outliers_report:
   type: pickle.PickleDataset
   filepath: data/08_reporting/outliers_report.pkl
 
-# Model training outputs
+# Model training intermediate outputs
 pycaret_experiment:
   type: MemoryDataset
 
 model_comparison:
-  type: pandas.CSVDataset
-  filepath: data/06_models/model_comparison.csv
-  save_args:
-    index: False
+  type: pickle.PickleDataset
+  filepath: data/06_models/model_comparison.pkl
 
 tuned_model:
   type: MemoryDataset
@@ -44,12 +42,15 @@ model_metrics:
   type: json.JSONDataset
   filepath: data/06_models/model_metrics.json
 
-final_model:
-  type: pickle.PickleDataset
-  filepath: data/06_models/final_model.pkl
-
+# Output of predictions
 predictions:
   type: pandas.CSVDataset
   filepath: data/07_model_output/predictions.csv
   save_args:
     index: False
+
+# Final model artifact
+final_model:
+  type: pickle.PickleDataset
+  filepath: data/06_models/final_model.pkl
+
