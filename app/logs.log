@@ -1,0 +1,38 @@
+2025-06-22 13:12:36,371:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:12:36,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:12:36,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:12:36,372:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:40:34,914:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:40:34,914:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:40:34,914:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:40:34,914:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:41:24,965:INFO:Initializing load_model()
+2025-06-22 13:41:24,966:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:41:25,188:INFO:Initializing predict_model()
+2025-06-22 13:41:25,188:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x3037f6e50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x30409b420>)
+2025-06-22 13:41:25,188:INFO:Checking exceptions
+2025-06-22 13:41:25,188:INFO:Preloading libraries
+2025-06-22 13:41:25,188:INFO:Set up data.
+2025-06-22 13:41:25,194:INFO:Set up index.

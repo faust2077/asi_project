@@ -2,23 +2,6 @@ import time
 import pandas as pd
 import streamlit as st
 from model.model import use_model
-from gcs_utils import download_model
-from streamlit.logger import get_logger
-
-logger = get_logger(__name__)
-
-# Parametry
-BUCKET_NAME = "caltracker-models"
-MODEL_NAME = "final_model.pkl"  
-LOCAL_PATH = "final_model.pkl"
-
-# Pobierz model
-logger.info("downloading model")
-
-download_model(BUCKET_NAME, MODEL_NAME, LOCAL_PATH)
-
-logger.info("model downloaded")
-
 
 st.set_page_config(page_title="CalTracker")
 

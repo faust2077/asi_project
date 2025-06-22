@@ -1,0 +1,166 @@
+2025-06-22 12:55:14,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:55:14,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:55:14,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:55:14,293:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:56:42,478:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:56:42,479:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:56:42,479:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 12:56:42,479:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:00:55,483:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:00:55,483:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:00:55,484:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:00:55,484:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:01:21,506:INFO:Initializing load_model()
+2025-06-22 13:01:21,506:INFO:load_model(model_name=/Users/dark/asi_project/data/06_models/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:21:59,528:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:21:59,528:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:21:59,528:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:21:59,528:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2025-06-22 13:22:22,586:INFO:Initializing load_model()
+2025-06-22 13:22:22,586:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:22:22,684:INFO:Initializing predict_model()
+2025-06-22 13:22:22,684:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x1283920d0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d3c3380>)
+2025-06-22 13:22:22,684:INFO:Checking exceptions
+2025-06-22 13:22:22,684:INFO:Preloading libraries
+2025-06-22 13:22:22,685:INFO:Set up data.
+2025-06-22 13:22:22,688:INFO:Set up index.
+2025-06-22 13:22:34,981:INFO:Initializing load_model()
+2025-06-22 13:22:34,983:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:22:34,999:INFO:Initializing predict_model()
+2025-06-22 13:22:34,999:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16d344c50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d3c3380>)
+2025-06-22 13:22:34,999:INFO:Checking exceptions
+2025-06-22 13:22:34,999:INFO:Preloading libraries
+2025-06-22 13:22:35,000:INFO:Set up data.
+2025-06-22 13:22:35,002:INFO:Set up index.
+2025-06-22 13:22:46,581:INFO:Initializing load_model()
+2025-06-22 13:22:46,582:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:22:46,601:INFO:Initializing predict_model()
+2025-06-22 13:22:46,601:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16d344950>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d01ed40>)
+2025-06-22 13:22:46,601:INFO:Checking exceptions
+2025-06-22 13:22:46,601:INFO:Preloading libraries
+2025-06-22 13:22:46,602:INFO:Set up data.
+2025-06-22 13:22:46,606:INFO:Set up index.
+2025-06-22 13:22:59,640:INFO:Initializing load_model()
+2025-06-22 13:22:59,641:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:22:59,655:INFO:Initializing predict_model()
+2025-06-22 13:22:59,656:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16c6e6690>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d3dfec0>)
+2025-06-22 13:22:59,656:INFO:Checking exceptions
+2025-06-22 13:22:59,656:INFO:Preloading libraries
+2025-06-22 13:22:59,656:INFO:Set up data.
+2025-06-22 13:22:59,659:INFO:Set up index.
+2025-06-22 13:23:19,190:INFO:Initializing load_model()
+2025-06-22 13:23:19,192:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:23:19,208:INFO:Initializing predict_model()
+2025-06-22 13:23:19,208:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16c6e7e10>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d3dfd80>)
+2025-06-22 13:23:19,208:INFO:Checking exceptions
+2025-06-22 13:23:19,208:INFO:Preloading libraries
+2025-06-22 13:23:19,209:INFO:Set up data.
+2025-06-22 13:23:19,211:INFO:Set up index.
+2025-06-22 13:23:35,222:INFO:Initializing load_model()
+2025-06-22 13:23:35,224:INFO:load_model(model_name=/Users/dark/asi_project/final_model, platform=None, authentication=None, verbose=True)
+2025-06-22 13:23:35,241:INFO:Initializing predict_model()
+2025-06-22 13:23:35,241:INFO:predict_model(self=<pycaret.regression.oop.RegressionExperiment object at 0x16d339050>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=['Duration', 'Body_Temp',
+                                             'Heart_Rate', 'Age'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=[],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('actual_estimator',
+                 LGBMRegressor(bagging_fraction=0.6, bagging_freq=5,
+                               feature_fraction=0.8, learning_rate=0.05,
+                               min_child_samples=86, min_split_gain=0.9,
+                               n_estimators=130, n_jobs=-1, num_leaves=40,
+                               random_state=42, reg_alpha=2,
+                               reg_lambda=0.001))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x16d0e0400>)
+2025-06-22 13:23:35,241:INFO:Checking exceptions
+2025-06-22 13:23:35,241:INFO:Preloading libraries
+2025-06-22 13:23:35,241:INFO:Set up data.
+2025-06-22 13:23:35,245:INFO:Set up index.
