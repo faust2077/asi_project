@@ -7,12 +7,10 @@ pycaret==3.3.2
 
 # Kedro stack
 kedro==0.19.13
-kedro-jupyter
 kedro-viz>=6.7.0
 kedro-datasets>=3.0
 
 # App and tooling
-streamlit==1.44.1
 jupyterlab>=3.0
 ipython>=8.10
 setuptools

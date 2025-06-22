@@ -1,4 +1,5 @@
 import time
+import os
 import pandas as pd
 import streamlit as st
 from model.model import use_model
@@ -7,22 +8,24 @@ from streamlit.logger import get_logger
 
 logger = get_logger(__name__)
 
-# Parametry
+# Parameters
 BUCKET_NAME = "caltracker-models"
-MODEL_NAME = "final_model.pkl"  
-LOCAL_PATH = "final_model.pkl"
+MODEL_NAME = "final_model.pkl"
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+LOCAL_PATH = os.path.abspath(os.path.join(APP_DIR, "model", "final_model.pkl"))
 
-# Pobierz model
-logger.info("downloading model")
-
-download_model(BUCKET_NAME, MODEL_NAME, LOCAL_PATH)
-
-logger.info("model downloaded")
-
+def ensure_model_downloaded():
+    if not os.path.exists(LOCAL_PATH):
+        logger.info("downloading model")
+        download_model(BUCKET_NAME, MODEL_NAME, LOCAL_PATH)
+        logger.info("model downloaded")
+    else:
+        logger.info("model already exists locally")
 
 st.set_page_config(page_title="CalTracker")
 
 def main():
+    ensure_model_downloaded()
     st.title("CalTracker")
 
     data = pd.DataFrame({
@@ -60,3 +63,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

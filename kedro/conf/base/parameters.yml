@@ -7,7 +7,7 @@ train_size: 0.8
 # Seed for experiment reproducibility
 session_id: 42
 # Number of top models to compare by MAE
-n_models: 5
+n_models: 3
 # Model identifier for hyperparameter tuning
 best_model_name: lightgbm
 # Path to save the final trained model
