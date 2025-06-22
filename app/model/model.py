@@ -14,7 +14,8 @@ def prepare_data(dataframe, model):
 
 def use_model(dataframe):
 
-    model_path = os.path.join(SCRIPT_DIR, 'final_model')
+    project_root = os.path.abspath(os.path.join(SCRIPT_DIR, os.pardir, os.pardir))
+    model_path = os.path.join(project_root, 'data', '06_models', 'final_model')
     model = load_model(model_path)
     df = prepare_data(dataframe, model)
 
