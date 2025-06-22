@@ -56,8 +56,3 @@ predictions:
   save_args:
     index: False
 
-# Final model artifact
-final_model:
-  type: pickle.PickleDataset
-  filepath: data/06_models/final_model.pkl
-
