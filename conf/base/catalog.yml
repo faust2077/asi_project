@@ -46,7 +46,10 @@ model_metrics:
 
 final_model:
   type: pickle.PickleDataset
-  filepath: data/06_models/final_model.pkl
+  filepath: gcs://caltracker-models/final_model.pkl
+  backend: pickle
+  fs_args:
+    project: caltracker-463708
 
 predictions:
   type: pandas.CSVDataset
