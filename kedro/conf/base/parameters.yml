@@ -1,6 +1,4 @@
 target_column: Calories
-# Compute mutual information scores against the correct target
-top_features: 4 # Weight column excluded
 
 # Data split ratio for training vs. testing
 train_size: 0.8

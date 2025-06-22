@@ -13,7 +13,7 @@ calories_no_empty:
 calories_no_duplicates:
   type: MemoryDataset
 
-calories_with_bmi:
+calories_selected_features:
   type: MemoryDataset
 
 # Preprocessing outputs
