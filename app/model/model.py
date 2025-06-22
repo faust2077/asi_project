@@ -1,4 +1,5 @@
 import os
+from google.cloud import storage
 from pycaret.regression import load_model, predict_model
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
