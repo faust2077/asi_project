@@ -25,19 +25,13 @@ cd asi_project
 
 ## Zależności Kedro
 
-1. **Instalacja pakietów Kedro (przez pip):**
-
-```bash
-pip install -r kedro/requirements.txt
-```
-
-2. **Stwórz środowisko Conda wraz ze wszystkimi zależnościami:**
+1. **Stwórz środowisko Conda wraz ze wszystkimi zależnościami:**
 
 ```bash
 conda env create -f kedro/environment.yml
 ```
 
-3. **Aktywuj środowisko Conda:**
+2. **Aktywuj środowisko Conda:**
 
 ```bash
 conda activate caltracker-kedro-env
@@ -61,6 +55,8 @@ kedro run --pipeline=data_processing
 ```
 
 Ten pipeline przetwarza surowe dane `calories.csv` na dane gotowe do treningu – `preprocessed_data.csv`.
+
+
 2. **Pipeline treningu modelu (uruchom jako drugi):**
 
 ```bash
