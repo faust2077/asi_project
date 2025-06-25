@@ -92,20 +92,17 @@ Użyj opcji `-e` w `docker run` (patrz sekcja [Uruchamianie aplikacji w kontener
 ## Uruchamianie aplikacji lokalnie
 
 1. **Utwórz i aktywuj środowisko wirtualne:**
-    - **Windows (PowerShell):**
-
+   - **Windows (PowerShell):**
 ```bash
 python -m venv .venv
 Set-ExecutionPolicy Unrestricted -Scope Process
 .venv\Scripts\activate
 ```
-    - **Linux/macOS:**
-
+   - **Linux/macOS:**
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
-
 2. **Zainstaluj wymagane pakiety:**
 
 ```bash
