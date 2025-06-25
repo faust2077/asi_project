@@ -55,6 +55,8 @@ kedro run --pipeline=data_processing
 ```
 
 Ten pipeline przetwarza surowe dane `calories.csv` na dane gotowe do treningu – `preprocessed_data.csv`.
+
+
 2. **Pipeline treningu modelu (uruchom jako drugi):**
 
 ```bash
