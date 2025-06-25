@@ -3,7 +3,7 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.12
+  - python=3.11
   - pandas=2.1.4
   - numpy
   - matplotlib
@@ -12,9 +12,11 @@ dependencies:
   - kedro=0.19.13
   - kedro-viz=6.7.0
   - jupyterlab>=3.0
-  - streamlit=1.44.1
+  - ipython>=8.10
+  - setuptools
+  - gcsfs
   - pip
   - pip:
-    - pycaret==3.3.2
-    - kedro-datasets>=3.0
+      - pycaret==3.3.2
+      - kedro-datasets>=3.0
 

@@ -6,7 +6,5 @@ train_size: 0.8
 session_id: 42
 # Number of top models to compare by MAE
 n_models: 3
-# Model identifier for hyperparameter tuning
-best_model_name: lightgbm
 # Path to save the final trained model
 model_save_path: data/06_models/final_model.pkl

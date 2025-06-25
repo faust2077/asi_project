@@ -34,7 +34,7 @@ pip install -r kedro/requirements.txt
 2. **Stwórz środowisko Conda wraz ze wszystkimi zależnościami:**
 
 ```bash
-conda env create -f environment.yml
+conda env create -f kedro/environment.yml
 ```
 
 3. **Aktywuj środowisko Conda:**
@@ -99,7 +99,6 @@ python -m venv .venv
 Set-ExecutionPolicy Unrestricted -Scope Process
 .venv\Scripts\activate
 ```
-
     - **Linux/macOS:**
 
 ```bash
@@ -163,7 +162,7 @@ http://localhost:8501
 **Wskazówki:**
 
 - Upewnij się, że masz wymagane uprawnienia do korzystania z Google Cloud Storage.
-- Przed uruchomieniem aplikacji upewnij się, że pipeline'y Kedro zostały poprawnie wykonane i model jest dostępny w GCS.
+- Przed uruchomieniem aplikacji upewnij się, że pipeline'y Kedro zostały poprawnie wykonane.
 
 ---
 

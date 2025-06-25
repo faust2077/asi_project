@@ -23,24 +23,17 @@ preprocessed_calories:
   save_args:
     index: False
 
-outliers_report:
-  type: pickle.PickleDataset
-  filepath: data/08_reporting/outliers_report.pkl
-
-# Model training intermediate outputs
 pycaret_experiment:
   type: MemoryDataset
 
-model_comparison:
-  type: pickle.PickleDataset
-  filepath: data/06_models/model_comparison.pkl
-
-tuned_model:
+top_models:
   type: MemoryDataset
 
-model_metrics:
-  type: json.JSONDataset
-  filepath: data/06_models/model_metrics.json
+tuned_models:
+  type: MemoryDataset
+
+best_model:
+  type: MemoryDataset
 
 final_model:
   type: pickle.PickleDataset
@@ -48,10 +41,3 @@ final_model:
   backend: pickle
   fs_args:
     project: caltracker-463708
-
-# Output of predictions
-predictions:
-  type: pandas.CSVDataset
-  filepath: data/07_model_output/predictions.csv
-  save_args:
-    index: False

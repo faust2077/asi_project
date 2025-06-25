@@ -1,2 +1,10 @@
+# Temporary files
 user_data.csv
 logs.log
+.DS_store
+
+# Model retrieved from GCS
+app/model/final_model.pkl
+
+# .venv
+.venv
