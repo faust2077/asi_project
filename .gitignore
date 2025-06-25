@@ -1,7 +1,7 @@
 # Temporary files
 user_data.csv
 logs.log
-.DS_store
+.DS_Store
 
 # Model retrieved from GCS
 app/model/final_model.pkl
