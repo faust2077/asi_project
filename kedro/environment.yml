@@ -10,7 +10,7 @@ dependencies:
   - seaborn=0.13.2
   - scikit-learn<1.4
   - kedro=0.19.13
-  - kedro-viz=6.7.0
+  - kedro-viz>=6.7.0
   - jupyterlab>=3.0
   - ipython>=8.10
   - setuptools

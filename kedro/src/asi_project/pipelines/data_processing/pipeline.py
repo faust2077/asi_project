@@ -29,7 +29,7 @@ def create_pipeline(**kwargs) -> Pipeline:
         node(
             func=keep_selected_features,
             inputs="calories_no_duplicates",
-            outputs="calories_selected_features",
+            outputs="preprocessed_calories",
             name="keep_selected_features_node"
         ),
     ])
